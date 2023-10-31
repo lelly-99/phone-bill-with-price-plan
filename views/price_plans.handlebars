@@ -1,0 +1,22 @@
+
+<h1 class="mt-4">Price Plan</h1>
+<table class="table mt-3">
+    <thead class="thead-light">
+        <tr>
+            <th>Plan</th>
+            <th>SMS Price</th>
+            <th>Call Price</th>
+            <th>Users</th> 
+        </tr>
+    </thead>
+    <tbody>
+        {{#each pricePlans}}
+        <tr>
+            <td>{{this.plan_name}}</td>
+            <td>R{{this.sms_price}}</td>
+            <td>R{{this.call_price}}</td>
+            <td ><a href="/users">Users</a></td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
